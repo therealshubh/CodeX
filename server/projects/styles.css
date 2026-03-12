@@ -1,0 +1,14 @@
+/* styles.css */
+.landing-page {
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.landing-page h1 {
+  font-size: 36px;
+}
+
+.landing-page p {
+  font-size: 18px;
+  color: #666;
+}

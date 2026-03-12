@@ -1,0 +1,74 @@
+/* ═══════════════════════════════════════════════════════
+   Terminal / Console
+   ═══════════════════════════════════════════════════════ */
+
+.terminal {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--bg-primary);
+    overflow: hidden;
+    font-family: var(--font-mono);
+}
+
+.terminal__output {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--font-size-xs);
+    line-height: 1.7;
+}
+
+.terminal__line {
+    display: flex;
+    gap: var(--space-sm);
+    padding: 1px 0;
+    animation: termFade 150ms ease;
+}
+
+@keyframes termFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.terminal__line--info {
+    color: var(--text-secondary);
+}
+
+.terminal__line--success {
+    color: var(--accent-success);
+}
+
+.terminal__line--error {
+    color: var(--accent-error);
+}
+
+.terminal__line--warning {
+    color: var(--accent-warning);
+}
+
+.terminal__time {
+    color: var(--text-tertiary);
+    flex-shrink: 0;
+    font-size: 10px;
+    min-width: 55px;
+}
+
+.terminal__text {
+    word-break: break-word;
+}
+
+.terminal__empty {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-tertiary);
+    font-size: var(--font-size-sm);
+    font-family: var(--font-sans);
+}
