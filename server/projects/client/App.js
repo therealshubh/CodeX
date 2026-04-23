@@ -1,0 +1,1 @@
+import React from 'react';function App() {return <div className='app-container'>Welcome to my e-commerce website!</div>;}export default App;

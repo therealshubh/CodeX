@@ -1,0 +1,1 @@
+import express from 'express';const categoryRouter = express.Router();categoryRouter.get('/', (req, res) => {res.json({message: 'Category route'})});export default categoryRouter;

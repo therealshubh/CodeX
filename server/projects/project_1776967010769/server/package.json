@@ -1,0 +1,12 @@
+{
+  "name": "jnv-server",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "latest",
+    "mongodb": "latest",
+    "mongoose": "latest"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
